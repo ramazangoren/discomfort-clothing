@@ -1,0 +1,83 @@
+.review-area {
+  /* background-color: red; */
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.ReviewsPage-getReviews {
+  background-color: rgb(128, 255, 0);
+  /* height: 100vh;
+  width: 100%; */
+  width: 55%;
+  margin-left: 50px;
+}
+
+.ReviewsPage-commentReview {
+  width: 40%;
+  height: 450px;
+  /* background-color: rgb(0, 255, 229); */
+  text-align: center;
+  align-items: center;
+}
+
+.ReviewsPage-commentReview > form{
+  width: 100%;
+  /* background-color: green; */
+  margin: 20px auto;
+}
+
+#reviewTitle, #reviewComment {
+  margin-top: 10px;
+  border-radius: 3px;
+  width: 80%;
+  margin: 10px 0px;
+  height: 40px;
+  padding: 10px;
+  outline-color: black;
+  border: 1px solid #ccc;
+  resize: none;
+}
+#reviewComment {
+  height: 100px;
+  padding: 10px;
+}
+
+.privacy-message{
+  width: 80%;
+  /* background-color: red; */
+  /* text-align: center;
+  align-items: center; */
+  margin: auto;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.ReviewsPage-buttons{
+  width: 70%;
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+.ReviewsPage-buttons > button{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.ReviewsPage-StarRating{
+  margin-left: 100px;
+}

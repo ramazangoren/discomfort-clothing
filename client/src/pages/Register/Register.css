@@ -1,0 +1,9 @@
+.strong {
+  /* background-color: #4caf50;  */
+  border-bottom: 4px solid #4caf50;
+}
+
+.weak {
+  /* background-color: #f44336;  */
+  border-bottom: 4px solid #f44336;
+}

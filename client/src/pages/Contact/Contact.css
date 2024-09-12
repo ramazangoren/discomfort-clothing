@@ -1,0 +1,122 @@
+.contact-container {
+  background-color: #252833;
+  padding: 40px;
+  max-width: 100%;
+}
+
+.contact-form-container {
+  /* background-color: #e32121; */
+  padding: 40px;
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+}
+
+.contact-form-container h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellow; */
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #252833;
+  border: 1px solid #555;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  height: 45px;
+  margin-right: 10px;
+  transition: font-size 0.3s ease, padding 0.3s ease;
+  outline-color: rgb(237, 237, 237);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+  transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+  font-size: 12px; /* Smaller font size on focus */
+  margin-bottom: 10px;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form .contact-submit-button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 750px) {
+  .contact-container {
+    padding: 0px;
+    min-height: 60vh;
+  }
+
+  .contact-form-container {
+    width: 95%;
+    padding: 0px;
+  }
+
+  .contact-form-container h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    height: 35px;
+  }
+
+  .form-group textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  .contact-form .contact-submit-button {
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+  }
+}

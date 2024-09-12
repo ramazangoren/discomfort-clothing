@@ -1,0 +1,140 @@
+.CustomerOrders {
+  padding: 20px;
+  max-width: 1200px;
+  min-height: 70vh;
+  margin: 50px auto;
+  background-color: #f4f4f4;
+}
+
+.CustomerOrders h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.CustomerOrders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.CustomerOrders-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  align-items: start;
+  gap: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CustomerOrders-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.CustomerOrders-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  /* border-radius: 50%; */
+}
+
+.CustomerOrders-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.CustomerOrders-item-food,
+.CustomerOrders-item-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.CustomerOrders-item-name {
+  margin: 10px 0;
+}
+
+.CustomerOrders-item-address {
+  margin-bottom: 10px;
+}
+
+.CustomerOrders-item select {
+  background-color: #ffe8e4;
+  border: 1px solid #ff6f61;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.CustomerOrders-item select:focus {
+  border-color: #ff6f61;
+}
+
+.CustomerOrders-item p {
+  margin: 5px 0;
+}
+
+@media (max-width: 1000px) {
+  .CustomerOrders {
+    max-width: 95%;
+    margin: 20px auto;
+  }
+
+  .CustomerOrders h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .CustomerOrders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .CustomerOrders-item {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c9c9c9;
+  }
+
+  .CustomerOrders-item img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .CustomerOrders-item div {
+    margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .CustomerOrders-item-name {
+    margin: 0px;
+  }
+
+  .CustomerOrders-item-address {
+    margin-bottom: 0px;
+  }
+
+  .CustomerOrders-item select {
+    width: 100%;
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .CustomerOrders-item p {
+    margin: 2px 0;
+  }
+}

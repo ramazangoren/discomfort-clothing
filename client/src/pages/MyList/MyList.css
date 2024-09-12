@@ -1,0 +1,148 @@
+.list-container {
+  min-height: 70vh;
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.list-item {
+  height: 100px;
+  width: 100%;
+  /* background-color: rgb(205, 79, 79); */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.list-item a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  /* background-color: rgb(255, 170, 0); */
+  width: 80%;
+}
+
+/* .list-image {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 238);
+  } */
+
+.list-image .list-image-featured {
+  height: 100px;
+  width: 100px;
+}
+
+.list-item-details {
+  height: 80px;
+  width: 200px;
+  /* background-color: rgb(170, 0, 255); */
+  margin-left: 20px;
+  text-align: left;
+}
+.list-item-details .name {
+  text-transform: capitalize;
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.list-item-buttons {
+  height: 80px;
+  width: 150px;
+  /* background-color: rgb(173, 50, 62); */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.list-item-buttons button {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.list-item-buttons button a {
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-price {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  /* background-color: red; */
+  font-size: 15px;
+}
+.list-price .list-oldPrice {
+  text-decoration: line-through;
+  color: rgb(99, 99, 99);
+}
+
+@media (max-width: 750px) {
+  .list-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .list-item {
+    height: 90px;
+    margin-bottom: 10px;
+  }
+
+  .list-item a {
+    width: 77%;
+  }
+
+  .list-image {
+      height: 90px;
+      width: 90px;
+    }
+
+  .list-image .list-image-featured {
+    height: 100%;
+    width: 90px;
+  }
+
+  .list-item-details {
+    width: 170px;
+    margin-left: 5px;
+  }
+
+  .list-item-details .name {
+    font-size: 15px;
+  }
+
+  .list-item-buttons {
+    width: 65px;
+    justify-content: space-between;
+  }
+
+  .list-item-buttons button {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .list-price {
+    width: 120px;
+    font-size: 15px;
+  }
+}

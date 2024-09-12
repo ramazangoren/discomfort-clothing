@@ -1,0 +1,28 @@
+.star-rating .on {
+  color: #ffc107;
+  background: none;
+}
+
+.star-rating .off {
+  color: #000000;
+  background: none;
+}
+
+.star-rating {
+  width: 280px;
+  height: 50px;
+  /* background-color: rgb(255, 0, 132); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#button {
+  /* background-color: black; */
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 30px;
+  font-size: 25px;
+  margin-right: 5px;
+}

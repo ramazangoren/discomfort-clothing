@@ -1,0 +1,42 @@
+.share {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-left: 18px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  border: none;
+}
+
+.share:hover {
+  text-decoration: underline;
+}
+
+.share .share-icon {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+
+@media (max-width: 750px) {
+  .share {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+
+  }
+  
+  .share .share-icon {
+    font-size: 15px;
+    margin-right: 7px;
+  }
+}

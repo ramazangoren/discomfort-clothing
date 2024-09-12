@@ -1,0 +1,141 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+  --link-color: #3498db;
+  --border-color-primary: rgb(218, 218, 218);
+  --border-color-secondary: rgb(236, 236, 236);
+}
+
+/* common classes for login and register pages starts here */
+
+.login-register-card-background {
+  min-height: 230px;
+  width: 35%;
+  background-color: rgb(255, 255, 255);
+  margin-right: 100px;
+  border: 1px solid var(--border-color-secondary);
+  border-radius: 5px;
+  -webkit-box-shadow: -22px -7px 54px -39px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: -22px -7px 54px -39px rgba(0, 0, 0, 0.62);
+  box-shadow: -22px -7px 54px -39px rgba(0, 0, 0, 0.62);
+  margin: 10% auto;
+}
+.login-register-card-background > p {
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.login-register-input-tag-styles {
+  width: 80%;
+  min-height: 50px;
+  /* background-color: red; */
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.login-register-input-tag-styles input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  outline-color: rgb(0, 0, 0);
+  border: 1px solid var(--border-color-primary);
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.login-register-input-tag-styles p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #f7f7f7;  */
+}
+.login-register-input-tag-styles p span {
+  width: 70px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-register-input-tag-styles button {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px 10px 0px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.login-register-input-tag-styles > div {
+  margin: 10px 0px 10px 0px;
+}
+.login-register-input-tag-styles > div > a {
+  margin-left: 10px;
+  text-decoration: underline;
+  color: var(--link-color);
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .login-register-card-background {
+    min-height: 230px;
+    width: 90%;
+    margin: 20% auto;
+  }
+
+  .login-register-card-background > p {
+    font-size: 20px;
+  }
+}
+
+/* common classes for login and register pages ends here */
+
+
+/* Custom Swiper arrow styles */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px; 
+}
+
+.swiper-button-next {
+  right: 10px; 
+}
+
+.swiper-button-prev {
+  left: 10px; 
+}

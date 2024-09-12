@@ -1,0 +1,7 @@
+payment thing
+
+seeing the orders etx...
+
+
+{/* <p>{new Date(review.createdAt).toLocaleString()} this shows everything event the hour and the minute</p> */}
+{/* <p>{new Date(review.createdAt).toLocaleDateString()}</p> but this doesnt. it show only the date*/}

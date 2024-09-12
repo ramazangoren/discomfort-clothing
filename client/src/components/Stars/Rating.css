@@ -1,0 +1,20 @@
+.StarRating-main {
+    display: flex;
+    align-items: center;
+  }
+  
+  .StarRating-main-icon {
+    color: #000000;
+  }
+  
+  .StarRating-main-border-icon {
+    color: #e0e0e0;
+  }
+  
+  
+  .StarRating-main{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 10px;
+  }
+  
