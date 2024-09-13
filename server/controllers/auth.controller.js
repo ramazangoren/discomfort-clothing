@@ -86,7 +86,7 @@ export const signin = async (req, res, next) => {
         .json({ success: false, message: "Wrong password" });
     }
 
-    const token = jwt.sign({ id: validUser._id }, process.env.JWT_SECRET);
+    const token = jwt.sign({ id: validUser._id }, process.env.JWT_SECRET, { expiresIn: "1h"});
     const { password: pass, ...rest } = validUser._doc;
     res
       .cookie("access_token", token, { httpOnly: true })
@@ -156,6 +156,7 @@ export const signout = async (req, res) => {
 export const me = async (req, res) => {
   try {
     const user = await User.findById(req.userId).select("-password"); // Exclude the password field
+    
 
     if (!user) {
       return res

@@ -25,11 +25,14 @@ app.use(express.json());
 // };
 // app.use(cors(corsOptions));
 
-app.use(cors({
-  origin: 'https://discomfort.astrainovations.com', // Ensure this is the correct URL with https
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow appropriate methods
-  credentials: true // Allow credentials if needed
-}));
+app.use(
+  cors({
+    // origin: 'https://discomfort.astrainovations.com',
+    origin: "http://localhost:5173",
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allow appropriate methods
+    credentials: true, // Allow credentials if needed
+  })
+);
 
 app.use(cookieParser());
 
