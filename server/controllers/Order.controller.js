@@ -3,9 +3,8 @@ import User from "../models/user.js";
 
 import Stripe from "stripe";
 
-// const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const stripe = new Stripe("sk_test_51Po3tdRvYkGID6MBsY9IxfNUMBMH2c2CisB9iAkJnm3EFodysTSxr2E0hdQCmzsnOGr97vUuSfFyyMwNwHeZoCfS00LpYKTZZj", {
-  apiVersion: "2022-11-15", // Make sure to specify the API version
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+  apiVersion: "2022-11-15"
 });
 
 const placeOrder = async (req, res) => {
