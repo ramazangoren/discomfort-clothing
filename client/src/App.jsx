@@ -28,8 +28,8 @@ import Verify from "./pages/Verify/Verify";
 import axios from "axios";
 import { useContext } from "react";
 import { AuthContext } from "./hooks/AuthContext";
-// axios.defaults.baseURL = "https://discomfort-clothing.onrender.com";
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "https://discomfort-clothing.onrender.com";
+// axios.defaults.baseURL = "http://localhost:4000";
 axios.defaults.withCredentials = true;
 
 const App = () => {
