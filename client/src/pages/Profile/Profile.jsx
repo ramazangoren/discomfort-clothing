@@ -95,7 +95,7 @@ const Profile = () => {
           />
           <img
             onClick={() => fileRef.current.click()}
-            src={formData.avatar || info.avatar}
+            src={formData?.avatar || info?.avatar}
             alt="profile"
             className="h-24 w-24 object-cover cursor-pointer self-center"
           />
