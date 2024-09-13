@@ -26,7 +26,7 @@
 const verifyToken = (req, res, next) => {
   const token = req.cookies.access_token;
 
-  console.log('Cookies:', req.cookies); // Debug log to check if cookies are received
+  console.log('Cookies:', req.cookies.access_token); // Debug log to check if cookies are received
 
   if (!token) {
     return res
