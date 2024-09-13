@@ -18,12 +18,19 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 app.use(express.json());
 
-const corsOptions = {
-  origin: "http://discomfort.astrainovations.com",
-  // origin: "http://localhost:5173",
-  credentials: true,
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   origin: "http://discomfort.astrainovations.com",
+//   // origin: "http://localhost:5173",
+//   credentials: true,
+// };
+// app.use(cors(corsOptions));
+
+app.use(cors({
+  origin: 'https://discomfort.astrainovations.com', // Ensure this is the correct URL with https
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow appropriate methods
+  credentials: true // Allow credentials if needed
+}));
+
 app.use(cookieParser());
 
 app.use((err, req, res, next) => {
